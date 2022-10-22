@@ -5,8 +5,8 @@ Esse projeto é uma lista de tarefas.
 Desafios:
 
 - [ ] HTML/CSS:
-   - [ ] Adicionar um campo de input;
-   - [ ] Adicionar um botão de confirmar;
+   - [X] Adicionar um campo de input;
+   - [X] Adicionar um botão de confirmar;
    - [ ] Checkbox para confirmar a tarefa feita;
    - [ ] Botão de apagar a tarefa;
 - [ ] JavaScript:
