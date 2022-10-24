@@ -4,9 +4,49 @@ header {
     margin: 36px;
 }
 
+.form {
+    margin-left: 50px;
+}
+
+label {
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+#texto-tarefa {
+    height: 26px;
+    width: 500px;
+    font-size: 20px;
+}
 
 
-#lista-tarefas {
-    display: inline-block;
+#btn-add, #btn-remove {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#mostra-tarefas {
+    display: inline-flex;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#mostra-tarefas ul{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+#mostra-tarefas button {
+    margin-left: auto;
+    margin-top: 5px;
 }
 

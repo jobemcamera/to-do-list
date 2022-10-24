@@ -1,6 +1,10 @@
-const botao = document.querySelector("#btn-add");
+const botaoAdd = document.querySelector("#btn-add")
+const botaoDel = document.querySelector("#btn-remove")
 
-botao.addEventListener("click", mostraTarefas);
+
+botaoAdd.addEventListener("click", mostraTarefas)
+botaoDel.addEventListener("click", deletaTarefas)
+
 
 function mostraTarefas() {
 
@@ -12,8 +16,18 @@ function mostraTarefas() {
             <ul id="lista-tarefas">
                  <li>${document.getElementById("texto-tarefa").value}</li>
             </ul>
+
+        <button id="btn-remove">Remover</button>
         `;
 	}
-
-	
 }
+
+
+
+function deletaTarefas() {
+
+    alert("deletado")
+
+
+}
+

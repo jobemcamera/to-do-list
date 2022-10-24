@@ -8,10 +8,10 @@ Desafios:
    - [X] Adicionar um campo de input;
    - [X] Adicionar um botão de confirmar;
    - [X] Checkbox para confirmar a tarefa feita;
-   - [ ] Botão de apagar a tarefa;
+   - [X] Botão de apagar a tarefa;
+   - [ ] Melhorar a estilização;
 - [ ] JavaScript:
    - [X] Verificar campo vazio;
-   - [ ] Função de adicionar a tarefa;
-   - [ ] Função de mostar a tarefa na tela;
-   - [ ] Função de marcar check na tarefa;
+   - [X] Função de adicionar a tarefa;
+   - [X] Função de mostar a tarefa na tela;
    - [ ] Função de apagar a tarefa;
