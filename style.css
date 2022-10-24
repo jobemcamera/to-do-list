@@ -3,3 +3,10 @@ header {
     font-size: 36px;
     margin: 36px;
 }
+
+
+
+#lista-tarefas {
+    display: inline-block;
+}
+

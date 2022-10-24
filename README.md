@@ -10,7 +10,7 @@ Desafios:
    - [X] Checkbox para confirmar a tarefa feita;
    - [ ] Botão de apagar a tarefa;
 - [ ] JavaScript:
-   - [ ] Verificar campo vazio;
+   - [X] Verificar campo vazio;
    - [ ] Função de adicionar a tarefa;
    - [ ] Função de mostar a tarefa na tela;
    - [ ] Função de marcar check na tarefa;
