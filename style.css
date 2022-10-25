@@ -34,3 +34,12 @@ body {
     margin-left: 12px;
     cursor: pointer;
 }
+
+.tarefas-container {
+    background-color: #FFF;
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px; 
+    display: none;
+}
