@@ -1,52 +1,36 @@
-header {
-    text-align: center;
-    font-size: 36px;
-    margin: 36px;
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(50, 180, 30, 1) 0%, rgba(0, 50, 180, 1) 100% );
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin: 150px;
 }
 
-.form {
-    margin-left: 50px;
+.nova-tarefa-container {
+    background-color: #FFF;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px; 
+    display: flex;
 }
 
-label {
-    font-size: 26px;
-    margin-right: 5px;
+.nova-tarefa-container input {
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 12px;
 }
 
-#texto-tarefa {
-    height: 26px;
-    width: 500px;
-    font-size: 20px;
-}
-
-
-#btn-add, #btn-remove {
-    align-content: center;
-    text-align: center;
-    margin: auto;
-    width: auto;
-    padding: 8px;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 10px;
+.nova-tarefa-botao {
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: green;
+    color: #FFF;
+    padding: 12px;
+    margin-left: 12px;
     cursor: pointer;
 }
-
-
-#mostra-tarefas {
-    display: inline-flex;
-    margin-left: 50px;
-    margin-top: 30px;
-}
-
-#mostra-tarefas ul{
-    margin-left: 20px;
-    margin-top: 15px;
-    margin-right: 20px;
-}
-
-#mostra-tarefas button {
-    margin-left: auto;
-    margin-top: 5px;
-}
-
