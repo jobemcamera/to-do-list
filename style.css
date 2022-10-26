@@ -43,3 +43,30 @@ body {
     box-shadow: 0 15px 30px; 
     display: none;
 }
+
+.tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.tarefa-item input {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.tarefa-item p {
+    font-size: 18px;
+
+}
+
+.tarefa-item i {
+    background-color: #293d69;
+    color: #FFF;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}

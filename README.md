@@ -7,8 +7,8 @@ Desafios:
 - [ ] HTML/CSS:
    - [X] Adicionar um campo de input;
    - [X] Adicionar um botão de confirmar;
-   - [ ] Checkbox para confirmar a tarefa feita;
-   - [ ] Botão de apagar a tarefa;
+   - [X] Checkbox para confirmar a tarefa feita;
+   - [X] Botão de apagar a tarefa;
    - [ ] Melhorar a estilização;
 - [ ] JavaScript:
    - [X] Verificar campo vazio;

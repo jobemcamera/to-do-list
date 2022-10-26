@@ -19,12 +19,25 @@ function addTarefa() {
     tarefaItemContainer.classList.add('tarefa-item') 
     // criando uma tag p na div
     const tarefaConteudo = document.createElement('p')  
+    // criando uma tag input
+    const tarefaCheck = document.createElement('input')
+    // criando o type checkbox da tag input
+    tarefaCheck.setAttribute("type", "checkbox")
     // inserindo a tarefa na tag p
     tarefaConteudo.innerText = novaTarefa.value
+    // criando a tag i com o icone de lixeira
+    const deletatarefa = document.createElement("i")
+    deletatarefa.classList.add("fa-solid")
+    deletatarefa.classList.add("fa-trash")
 
+    tarefaItemContainer.appendChild(tarefaCheck)
     tarefaItemContainer.appendChild(tarefaConteudo)
-
+    tarefaItemContainer.appendChild(deletatarefa)
     tarefaContainer.appendChild(tarefaItemContainer)
 
+    // reexibe o container já criado no html para guardar as tarefas digitas
     tarefaContainer.style.display = 'flex'
+
+    // limpa a caixa de texto do input
+    novaTarefa.value = "";
 }
