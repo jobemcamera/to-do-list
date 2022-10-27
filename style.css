@@ -22,6 +22,7 @@ body {
     border: 2px solid;
     border-radius: 5px;
     padding: 12px;
+    max-width: 700px;
 }
 
 .nova-tarefa-botao {
@@ -43,7 +44,7 @@ body {
     padding: 30px 20px;
     border-radius: 5px;
     box-shadow: 0 15px 30px; 
-    display: none;
+    
 }
 
 .tarefa-item {
@@ -58,11 +59,12 @@ body {
     cursor: pointer;
     width: 25px;
     height: 25px;
+
 }
 
 .tarefa-item p {
     font-size: 18px;
-    margin-left: 10px;
+    float: right;
 }
 
 .tarefa-item i {

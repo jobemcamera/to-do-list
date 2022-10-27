@@ -1,15 +1,14 @@
 const novaTarefa = document.querySelector(".nova-tarefa-input")
 const novaTarefaBtn = document.querySelector(".nova-tarefa-botao")
 const tarefaContainer = document.querySelector(".tarefas-container")
-const deletaTarefaBtn = document.querySelector("#lixo")
 
 // função que verifica o campo input vazio incluindo somente espaços
 function validarInput () {
-	if (novaTarefa.value.trim().length > 0) {
-		return true;
-	} else {
-		return false;
-	}
+    if (novaTarefa.value.trim().length > 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 novaTarefaBtn.addEventListener("click", addTarefa)
@@ -37,15 +36,15 @@ function addTarefa() {
     const deletaTarefa = document.createElement("i")
     deletaTarefa.classList.add("fa-solid")
     deletaTarefa.classList.add("fa-trash")
-    deletaTarefa.setAttribute("id", "lixo")
 
+    // mostra as tarefas na tela
     tarefaItemContainer.appendChild(tarefaCheck)
     tarefaItemContainer.appendChild(tarefaConteudo)
     tarefaItemContainer.appendChild(deletaTarefa)
     tarefaContainer.appendChild(tarefaItemContainer)
 
     // reexibe o container já criado no html para guardar as tarefas digitas
-    tarefaContainer.style.display = 'flex'
+    // tarefaContainer.style.display = 'block'
 
     // limpa a caixa de texto do input
     novaTarefa.value = "";
