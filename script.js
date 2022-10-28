@@ -1,6 +1,6 @@
-const novaTarefa = document.querySelector(".nova-tarefa-input")
-const novaTarefaBtn = document.querySelector(".nova-tarefa-botao")
-const tarefaContainer = document.querySelector(".tarefas-container")
+var novaTarefa = document.querySelector(".nova-tarefa-input")
+var novaTarefaBtn = document.querySelector(".nova-tarefa-botao")
+var tarefaContainer = document.querySelector(".tarefas-container")
 
 // função que verifica o campo input vazio incluindo somente espaços
 function validarInput () {
@@ -19,16 +19,16 @@ function addTarefa() {
         return
     }
     // criando uma tag div no html
-    const tarefaItemContainer = document.createElement('div') 
+    var tarefaItemContainer = document.createElement('div') 
 
     // adicionando uma class na div
     tarefaItemContainer.classList.add('tarefa-item') 
 
     // criando uma tag p na div
-    const tarefaConteudo = document.createElement('p')  
+    var tarefaConteudo = document.createElement('p')  
 
     // criando uma tag input
-    const tarefaCheck = document.createElement('input')
+    var tarefaCheck = document.createElement('input')
 
     // criando o type checkbox da tag input
     tarefaCheck.setAttribute("type", "checkbox")
@@ -37,7 +37,7 @@ function addTarefa() {
     tarefaConteudo.innerText = novaTarefa.value
 
     // criando a tag i com o icone de lixeira
-    const deletaTarefa = document.createElement("i")
+    var deletaTarefa = document.createElement("i")
     deletaTarefa.classList.add("fa-solid","fa-trash")
     
     // mostra as tarefas na tela
@@ -55,18 +55,10 @@ function addTarefa() {
     // reexibe o container já criado no html para guardar as tarefas digitas
     tarefaContainer.style.display = 'block'
     
-    // será testado posteriormente
-    // if (tarefaContainer tiver filho ) {
-    //    estilo display block
-    //  } else {
-    //    estilo display none
-    //  }
-    
 }
 
 function delTarefa(tarefaItemContainer, tarefaCheck, tarefaConteudo, deletaTarefa) {
     tarefaItemContainer.removeChild(tarefaCheck)
     tarefaItemContainer.removeChild(tarefaConteudo)
     tarefaItemContainer.removeChild(deletaTarefa)
-
 }
