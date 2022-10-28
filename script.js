@@ -14,6 +14,10 @@ function validarInput () {
 novaTarefaBtn.addEventListener("click", addTarefa)
 
 function addTarefa() {
+    // se o input for válido, executa a função addTarefa, se não, retorna false
+    if (!validarInput()) {
+        return
+    }
     // criando uma tag div no html
     const tarefaItemContainer = document.createElement('div') 
 
@@ -34,18 +38,35 @@ function addTarefa() {
 
     // criando a tag i com o icone de lixeira
     const deletaTarefa = document.createElement("i")
-    deletaTarefa.classList.add("fa-solid")
-    deletaTarefa.classList.add("fa-trash")
-
+    deletaTarefa.classList.add("fa-solid","fa-trash")
+    
     // mostra as tarefas na tela
     tarefaItemContainer.appendChild(tarefaCheck)
     tarefaItemContainer.appendChild(tarefaConteudo)
     tarefaItemContainer.appendChild(deletaTarefa)
     tarefaContainer.appendChild(tarefaItemContainer)
 
-    // reexibe o container já criado no html para guardar as tarefas digitas
-    // tarefaContainer.style.display = 'block'
+    // adiciona o evento click do "botão" tag <i> e deixa em standy-by. Só será executado depois de acionado
+    deletaTarefa.addEventListener("click",() => delTarefa(tarefaItemContainer, tarefaCheck, tarefaConteudo, deletaTarefa))
 
     // limpa a caixa de texto do input
     novaTarefa.value = "";
+
+    // reexibe o container já criado no html para guardar as tarefas digitas
+    tarefaContainer.style.display = 'block'
+    
+    // será testado posteriormente
+    // if (tarefaContainer tiver filho ) {
+    //    estilo display block
+    //  } else {
+    //    estilo display none
+    //  }
+    
+}
+
+function delTarefa(tarefaItemContainer, tarefaCheck, tarefaConteudo, deletaTarefa) {
+    tarefaItemContainer.removeChild(tarefaCheck)
+    tarefaItemContainer.removeChild(tarefaConteudo)
+    tarefaItemContainer.removeChild(deletaTarefa)
+
 }
