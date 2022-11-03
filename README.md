@@ -2,6 +2,8 @@
 
 Esse projeto é uma lista de tarefas.
 
+(assets/img/to-do-list-readme.jpg)
+
 Desafios:
 
 - [X] HTML/CSS:
