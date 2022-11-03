@@ -2,7 +2,7 @@
 
 Esse projeto é uma lista de tarefas.
 
-<img scr="assets/img/to-do-list-readme.jpg">
+![to-do-list-readme](https://user-images.githubusercontent.com/109925623/199853163-9de91c60-a890-45ec-a440-ee36f506cc35.JPG)
 
 Desafios:
 
