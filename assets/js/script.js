@@ -30,6 +30,11 @@ function addTarefa() {
     // criando uma tag input
     var tarefaCheck = document.createElement('input')
 
+    // evento de click no checkbox
+    tarefaCheck.onclick = function () {
+        checkTarefa(tarefaCheck, tarefaConteudo);
+    }
+
     // criando o type checkbox da tag input
     tarefaCheck.setAttribute("type", "checkbox")
 
@@ -46,6 +51,8 @@ function addTarefa() {
     tarefaItemContainer.appendChild(deletaTarefa)
     tarefaContainer.appendChild(tarefaItemContainer)
 
+    
+
     // adiciona o evento click do "botão" tag <i> e deixa em standy-by. Só será executado depois de acionado
     deletaTarefa.addEventListener("click",() => delTarefa(tarefaItemContainer, tarefaCheck, tarefaConteudo, deletaTarefa))
 
@@ -57,8 +64,19 @@ function addTarefa() {
     
 }
 
+// função que deleta toda a div da tarefa
 function delTarefa(tarefaItemContainer, tarefaCheck, tarefaConteudo, deletaTarefa) {
     tarefaItemContainer.removeChild(tarefaCheck)
     tarefaItemContainer.removeChild(tarefaConteudo)
     tarefaItemContainer.removeChild(deletaTarefa)
+    tarefaContainer.style.display = 'none'
+}
+
+// função que checa se o checkbox está marcado e risca o conteúdo da tarefa
+function checkTarefa(tarefaCheck, tarefaConteudo) {
+   if (tarefaCheck.checked) {
+        tarefaConteudo.classList.add('checked')
+   } else {
+    tarefaConteudo.classList.remove('checked')
+   }
 }

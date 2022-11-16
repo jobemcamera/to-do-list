@@ -45,7 +45,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 15px 30px; 
     display: none;
-    
 }
 
 .tarefa-item {
@@ -60,12 +59,15 @@ body {
     cursor: pointer;
     width: 25px;
     height: 25px;
-
 }
 
 .tarefa-item p {
     font-size: 18px;
     float: right;
+}
+
+.tarefa-item p.checked {
+    text-decoration: line-through;
 }
 
 .tarefa-item i {
