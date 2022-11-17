@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     height: 100vh;
     background: linear-gradient(90deg, rgba(50, 180, 30, 1) 0%, rgba(0, 50, 180, 1) 100% );
@@ -5,6 +7,7 @@ body {
     align-items: top;
     justify-content: center;
     margin: 100px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nova-tarefa-container {
@@ -44,6 +47,7 @@ body {
     padding: 30px 20px;
     border-radius: 5px;
     box-shadow: 0 15px 30px; 
+    text-align: center;
     display: none;
 }
 
@@ -63,7 +67,6 @@ body {
 
 .tarefa-item p {
     font-size: 18px;
-    float: right;
 }
 
 .tarefa-item p.checked {
@@ -77,3 +80,36 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 460px) {
+    .nova-tarefa-container {
+        width: 260px;
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .nova-tarefa-container input {
+        font-size: 14px;
+        width: 220px;
+    }
+    .nova-tarefa-botao {
+        font-size: 14px;
+        width: 250px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .tarefa-item input {
+        width: 20px;
+        height: 20px;
+    }
+    .tarefa-item p {
+        font-size: 14px;
+    }
+    .tarefa-item i {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+   

@@ -69,7 +69,7 @@ function delTarefa(tarefaItemContainer, tarefaCheck, tarefaConteudo, deletaTaref
     tarefaItemContainer.removeChild(tarefaCheck)
     tarefaItemContainer.removeChild(tarefaConteudo)
     tarefaItemContainer.removeChild(deletaTarefa)
-    tarefaContainer.style.display = 'none'
+    tarefaContainer.removeChild(tarefaItemContainer)
 }
 
 // função que checa se o checkbox está marcado e risca o conteúdo da tarefa
